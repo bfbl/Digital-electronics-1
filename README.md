@@ -1,5 +1,5 @@
 # Digital-electronics-1
-#### *~~Here you will witness all my suffering with git☺~~*
+#### *~~Here you will witness all my suffering with git~~*
 
 ##Ordered and unordered list
 
