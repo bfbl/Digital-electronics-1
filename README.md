@@ -22,7 +22,7 @@ Content in the first column | Content in the second column
 
 ### Listing of VHDL source code
 This is a snippet of VHDL code from an EDA example
-```
+```VHDL
 -- Testbench for OR gate
 library IEEE;
 use IEEE.std_logic_1164.all;
