@@ -24,7 +24,7 @@ https://github.com/bfbl/Digital-electronics-1
 | 1 | 1 | 0 | 0 |
 | 1 | 1 | 1 | 0 |
 
-![Logic function](images/grafU1.png)
+![Logic function](images/grafU1.PNG)
 ```VHDL
 ------------------------------------------------------------------------
 --
@@ -68,10 +68,10 @@ end architecture dataflow;
 ## Verification of Distributive laws
 [link to my code on EDA](https://www.edaplayground.com/x/W_Lu)
 
-![Logic function](images/basicBoolean.png)
+![Logic function](images/basicBoolean.PNG)
 The graph above shows basic Boolean postulates
 
-![Logic function](images/distrLaws.png)
+![Logic function](images/distrLaws.PNG)
 The graph above shows the distributive laws, where the suffix 'e' means it's the equivalent of the other expression.
 
 ```VHDL
