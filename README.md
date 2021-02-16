@@ -1,4 +1,7 @@
 # Digital-electronics-1
+## Assignments are in Labs
+  
+    
 ###### ~~Here you will witness all my suffering with git~~
 
 ### Ordered and unordered list
