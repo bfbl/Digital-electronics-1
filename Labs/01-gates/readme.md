@@ -1,10 +1,12 @@
 ## GitHub link to my Digital-electronics-1 repository
 https://github.com/bfbl/Digital-electronics-1
-
+  
+  
 ## Verification of De Morgan's laws of function f(c,b,a)
 [link to my code on EDA](https://www.edaplayground.com/x/Qw2f)
-
-![Logic function](images/equations.gif)
+  
+    
+![Logic function](images/equations.gif)  
 ```LaTeX
 \begin{align*}
     f(c,b,a) =&~ \overline{b}\,a + \overline{c}\,\overline{b}\\
@@ -12,7 +14,7 @@ https://github.com/bfbl/Digital-electronics-1
     f(c,b,a)_{\textup{NOR}} =&~ \overline{\overline{ \overline{b+\overline{a}}\ + \overline{c+b}}}\\\
 \end{align*}
 ```
-
+  
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 | 1 |
@@ -68,10 +70,10 @@ end architecture dataflow;
 ## Verification of Distributive laws
 [link to my code on EDA](https://www.edaplayground.com/x/W_Lu)
 
-![Logic function](images/basicBoolean.PNG)
+![Logic function](images/basicBoolean.PNG)  
 The graph above shows basic Boolean postulates
-
-![Logic function](images/distrLaws.PNG)
+  
+![Logic function](images/distrLaws.PNG)  
 The graph above shows the distributive laws, where the suffix 'e' means it's the equivalent of the other expression.
 
 ```VHDL
