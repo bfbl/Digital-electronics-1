@@ -1,3 +1,5 @@
+## Vivado tutorial
+
 1. After clicking on Create Project, enter the name and location of the project
 2. Next, for most of the projects select RTL
 3. Next, in Add sources click Create File, select type VHDL and enter name
@@ -10,11 +12,14 @@
 10. If necessary, XDC constraint file can be added in the same way
 11. To run simulation, press Run Simulation in Flow Navigator window, and select Behavioral
 12. In Simulation window find the settings button (cogwheel) to adjust the plot and values (HEX/DEC)
-
-
-
   
+## Nexys A7 LEDs & Switches diagram
   
+![diag](images/nexysA7.png)
+  
+## Project tasks
+  
+![graph](images/waveforms.png)
   
 ``` VHDL
 p_stimulus : process
