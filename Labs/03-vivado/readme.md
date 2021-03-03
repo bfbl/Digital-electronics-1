@@ -1,3 +1,5 @@
+link to git: https://github.com/bfbl/Digital-electronics-1/tree/main/Labs/03-vivado
+  
 ## Vivado tutorial
 
 1. After clicking on Create Project, enter the name and location of the project
