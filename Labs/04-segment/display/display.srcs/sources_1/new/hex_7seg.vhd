@@ -51,7 +51,7 @@ begin
     -- Any time "hex_i" is changed, the process is "executed".
     -- Output pin seg_o(6) corresponds to segment A, seg_o(5) to B, etc.
     --------------------------------------------------------------------
-    p_7seg_decoder : process(hex_i)
+    p_7seg_decoder : process(hex_i) --pri zmene premennej v zavorke sa spusti proces
     begin
         case hex_i is
             when "0000" =>
@@ -60,45 +60,45 @@ begin
             when "0001" =>
                 seg_o <= "1001111";     -- 1
             
---            when "0000" =>
-  --              seg_o <= "0000001";     -- 2
-    --            
-      --      when "0001" =>
-        --        seg_o <= "1001111";     -- 3
-          --      
-           -- when "0000" =>
---                seg_o <= "0000001";     -- 4
-  --              
-    --        when "0001" =>
-      --          seg_o <= "1001111";     -- 5
---
-  --          when "0000" =>
-    --            seg_o <= "0000001";     -- 6
-      --          
-        --    when "0001" =>
-          --      seg_o <= "1001111";     -- 7
---
-  --          when "0000" =>
-    --            seg_o <= "0000001";     -- 8
-      --          
-        --    when "0001" =>
-          --      seg_o <= "1001111";     -- 9
---
-  --          when "0000" =>
-    --            seg_o <= "0000001";     -- A
-      --          
-        --    when "0001" =>
-          --      seg_o <= "1001111";     -- B
---
-  --          when "0000" =>
-    --            seg_o <= "0000001";     -- C
-      --          
-        --    when "0001" =>
-          --      seg_o <= "1001111";     -- D
---
-  --          when "1110" =>
-    --            seg_o <= "0110000";     -- E
-      --          
+            when "0000" =>
+                seg_o <= "0010010";     -- 2
+                
+            when "0001" =>
+                seg_o <= "0000110";     -- 3
+                
+            when "0000" =>
+                seg_o <= "1001100";     -- 4
+                
+            when "0001" =>
+                seg_o <= "0100100";     -- 5
+
+            when "0000" =>
+                seg_o <= "0100000";     -- 6
+                
+            when "0001" =>
+                seg_o <= "0001111";     -- 7
+
+            when "0000" =>
+                seg_o <= "0000000";     -- 8
+                
+            when "0001" =>
+                seg_o <= "0000100";     -- 9
+
+            when "0000" =>
+                seg_o <= "0001000";     -- A
+                
+            when "0001" =>
+                seg_o <= "1100000";     -- b
+
+            when "0000" =>
+                seg_o <= "1001110";     -- C
+                
+            when "0001" =>
+                seg_o <= "1000010";     -- d
+
+            when "1110" =>
+                seg_o <= "0110000";     -- E
+                
             when others =>
                 seg_o <= "0111000";     -- F
                 
