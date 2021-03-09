@@ -39,7 +39,7 @@ architecture Behavioral of tb_hex_7seg is
 
     -- Local signals trreba definovat signaly ktore budeme ovladat
     signal s_hex    : std_logic_vector(4 - 1 downto 0);
-    signal s_seg    : std_logic_vector(4 - 1 downto 0);
+    signal s_seg    : std_logic_vector(7 - 1 downto 0);
 
 begin
     -- Connecting testbench signals with gates entity (Unit Under Test)
