@@ -56,9 +56,11 @@ begin
         port map(
             hex_i    => SW,
             seg_o(6) => CA,
-
-            -- WRITE YOUR CODE HERE
-
+            seg_o(5) => CB,
+            seg_o(4) => CC,
+            seg_o(3) => CD,
+            seg_o(2) => CE,
+            seg_o(1) => CF,
             seg_o(0) => CG
         );
 
@@ -70,16 +72,31 @@ begin
 
     -- Turn LED(4) on if input value is equal to 0, ie "0000"
     -- WRITE YOUR CODE HERE
+    LED(4) <= '1' when SW = "0000" else '0';
     
     -- Turn LED(5) on if input value is greater than 9
     -- WRITE YOUR CODE HERE
+    LED(5) <= '1' when SW > "1001" else '0';
     
     -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
     -- WRITE YOUR CODE HERE
+    LED(6) <= '1' when SW = "0001" else
+              '1' when SW = "0011" else
+              '1' when SW = "0101" else
+              '1' when SW = "0111" else
+              '1' when SW = "1001" else
+              '1' when SW = "1011" else
+              '1' when SW = "1101" else
+              '1' when SW = "1111" else
+              '0';
     
     -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
     -- WRITE YOUR CODE HERE
-
+    LED(7) <= '1' when SW = "0001" else
+              '1' when SW = "0010" else
+              '1' when SW = "0100" else
+              '1' when SW = "1000" else
+              '0';
 end architecture behavioral;
 
 
