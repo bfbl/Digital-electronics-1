@@ -1,0 +1,73 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 03/03/2021 01:28:12 PM
+-- Design Name: 
+-- Module Name: tb_hex_7seg - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity tb_hex_7seg is
+    --Port();   --v testbench sa do entity nepise nic
+end tb_hex_7seg;
+
+architecture Behavioral of tb_hex_7seg is
+
+    -- Local signals trreba definovat signaly ktore budeme ovladat
+    signal s_hex    : std_logic_vector(4 - 1 downto 0);
+    signal s_seg    : std_logic_vector(4 - 1 downto 0);
+
+begin
+    -- Connecting testbench signals with gates entity (Unit Under Test)
+    uut_hex_7seg : entity work.hex_7seg
+        port map(
+            hex_i   =>  s_hex,
+            seg_o   =>  s_seg
+            );
+
+    --------------------------------------------------------------------
+    -- Data generation process
+    --------------------------------------------------------------------
+    p_stimulus : process
+    begin
+        -- Report a note at the beginning of stimulus process
+        report "Stimulus process started" severity note;
+        
+        s_hex <= "0001"; wait for 100 ns;
+        
+        s_hex <= "0010"; wait for 100 ns;
+        
+        s_hex <= "0011"; wait for 100 ns;
+        
+        s_hex <= "0000"; wait for 100 ns;
+        -- Report a note at the end of stimulus process
+        report "Stimulus process finished" severity note;
+    wait;                   -- Process is suspended forever
+    end process p_stimulus;
+
+
+end Behavioral;

@@ -1,0 +1,7 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /home/boris/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 3fb6880ca76c4741866ea05ad2f270cf --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_hex_7seg_behav xil_defaultlib.tb_hex_7seg -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3311] expression has 4 elements ; formal 'seg_o' expects 7 [/home/boris/Documents/Digital-electronics-1/Labs/04-segment/display/display.srcs/sim_1/new/tb_hex_7seg.vhd:49]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_hex_7seg in library work failed.
