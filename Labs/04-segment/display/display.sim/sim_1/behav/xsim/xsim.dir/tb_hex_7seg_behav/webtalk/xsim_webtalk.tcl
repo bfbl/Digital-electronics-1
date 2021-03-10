@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir /home/boris/Documents/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/behav/xsim/xsim.dir/tb_hex_7seg_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Tue Mar  9 23:38:51 2021" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Wed Mar 10 00:50:01 2021" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
@@ -14,11 +14,11 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "642f8f6b-684a-4d81-a643-ef23daf49d08" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "3fb6880ca76c4741866ea05ad2f270cf" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "4" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "6" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Ubuntu" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "Ubuntu 18.04.5 LTS" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "2141.779 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "2201.557 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "12.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
@@ -28,5 +28,5 @@ webtalk_add_data -client xsim -key runtime -value "2 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Time -value "0.02_sec" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Memory -value "127936_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1479264360 -regid "" -xml /home/boris/Documents/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/behav/xsim/xsim.dir/tb_hex_7seg_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/boris/Documents/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/behav/xsim/xsim.dir/tb_hex_7seg_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/boris/Documents/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/behav/xsim/xsim.dir/tb_hex_7seg_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_transmit -clientid 1435157788 -regid "" -xml /home/boris/Documents/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/behav/xsim/xsim.dir/tb_hex_7seg_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/boris/Documents/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/behav/xsim/xsim.dir/tb_hex_7seg_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/boris/Documents/Digital-electronics-1/Labs/04-segment/display/display.sim/sim_1/behav/xsim/xsim.dir/tb_hex_7seg_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
