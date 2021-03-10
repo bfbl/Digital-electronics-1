@@ -1,8 +1,9 @@
 1. Preparation tasks 
   * Figure or table with connection of 7-segment displays on Nexys A7 board
+![board](images/io.png)
   
   * Decoder truth table for common anode 7-segment display  
-  
+
 | **Hex** | **Inputs** | **A** | **B** | **C** | **D** | **E** | **F** | **G** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
