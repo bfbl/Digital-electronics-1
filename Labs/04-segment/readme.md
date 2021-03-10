@@ -1,7 +1,30 @@
-1. task1
+1. Preparation tasks 
+  * Figure or table with connection of 7-segment displays on Nexys A7 board
   
-2. task2
-## Listing of VHDL architecture from source file hex_7seg.vhd with syntax highlighting
+  * Decoder truth table for common anode 7-segment display
+| **Hex** | **Inputs** | **A** | **B** | **C** | **D** | **E** | **F** | **G** |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 1 | 0001 | 1 | 0 | 0 | 1 | 1 | 1 | 1 |
+| 2 | 0010 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
+| 3 | 0011 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 4 | 0100 | 1 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 5 | 0101 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| 6 | 0110 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 7 | 0111 | 0 | 0 | 0 | 1 | 1 | 1 | 1 |
+| 8 | 1000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9 | 1001 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| A | 1010 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| b | 1011 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| C | 1100 | 0 | 1 | 1 | 0 | 0 | 0 | 1 |
+| d | 1101 | 1 | 0 | 0 | 0 | 0 | 1 | 0 |
+| E | 1110 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+| F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
+  
+  
+2. Seven-segment display decoder.  
+  * Listing of VHDL architecture from source file hex_7seg.vhd with syntax highlighting
+    
 ```VHDL
 architecture behavioral of hex_7seg is
 begin
@@ -17,59 +40,44 @@ begin
         case hex_i is
             when "0000" =>
                 seg_o <= "0000001";     -- 0
-                
             when "0001" =>
                 seg_o <= "1001111";     -- 1
-            
             when "0010" =>
                 seg_o <= "0010010";     -- 2
-                
             when "0011" =>
                 seg_o <= "0000110";     -- 3
-                
             when "0100" =>
                 seg_o <= "1001100";     -- 4
-                
             when "0101" =>
                 seg_o <= "0100100";     -- 5
-
             when "0110" =>
                 seg_o <= "0100000";     -- 6
-                
             when "0111" =>
                 seg_o <= "0001111";     -- 7
-
             when "1000" =>
                 seg_o <= "0000000";     -- 8
-                
             when "1001" =>
                 seg_o <= "0000100";     -- 9
-
             when "1010" =>
                 seg_o <= "0001000";     -- A
-                
             when "1011" =>
                 seg_o <= "1100000";     -- b
-
             when "1100" =>
                 seg_o <= "0110001";     -- C
-                
             when "1101" =>
                 seg_o <= "1000010";     -- d
-
             when "1110" =>
                 seg_o <= "0110000";     -- E
-                
             when others =>
                 seg_o <= "0111000";     -- F
-                
         end case;
     end process p_7seg_decoder;
 
 end architecture behavioral;
 ```
   
-## Listing of VHDL stimulus process from testbench file tb_hex_7seg.vhd with syntax highlighting and asserts
+  * Listing of VHDL stimulus process from testbench file tb_hex_7seg.vhd with syntax highlighting and asserts
+    
 ```VHDL
 p_stimulus : process
     begin
@@ -115,9 +123,12 @@ p_stimulus : process
     end process p_stimulus;
 ```
   
-## Screenshot with simulated time waveforms; always display all inputs and outputs
+  * Screenshot with simulated time waveforms; always display all inputs and outputs
+
+![Waveforms](graf1.png)
   
-## Listing of VHDL code from source file top.vhd with 7-segment module instantiation.
+  * Listing of VHDL code from source file top.vhd with 7-segment module instantiation.
+
 ``` VHDL
 hex2seg : entity work.hex_7seg
         port map(
@@ -132,9 +143,25 @@ hex2seg : entity work.hex_7seg
         );
 ```
   
-3. LED(7:4) indicators. Submit:
-  
-## Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting,
+3. LED(7:4) indicators. Submit:  
+  * Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting
 
-  
-## Screenshot with simulated time waveforms; always display all inputs and outputs.
+| **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0000 | 0 | 0 | 0 | 0 |
+| 1 | 0001 | 1 | 0 | 0 | 1 |
+| 2 | 0010 | 0 | 0 | 1 | 0 |
+| 3 | 0011 | 0 | 0 | 0 | 0 |
+| 4 | 0100 | 1 | 0 | 0 | 1 |
+| 5 | 0101 | 0 | 1 | 0 | 0 |
+| 6 | 0110 | 0 | 1 | 0 | 0 |
+| 7 | 0111 | 0 | 0 | 0 | 1 |
+| 8 | 1000 | 0 | 0 | 0 | 0 |
+| 9 | 1001 | 0 | 0 | 0 | 0 |
+| A | 1010 | 0 | 0 | 0 | 1 |
+| b | 1011 | 1 | 1 | 0 | 0 |
+| C | 1100 | 0 | 1 | 1 | 0 |
+| d | 1101 | 1 | 0 | 0 | 0 |
+| E | 1110 | 0 | 1 | 1 | 0 |
+| F | 1111 | 0 | 1 | 1 | 1 |
+
