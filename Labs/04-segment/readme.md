@@ -1,3 +1,6 @@
+  
+https://github.com/bfbl/Digital-electronics-1/tree/main/Labs/04-segment
+  
 1. Preparation tasks 
   * Figure or table with connection of 7-segment displays on Nexys A7 board
 ![board](images/io.png)
