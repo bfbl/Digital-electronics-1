@@ -5,4 +5,4 @@ Nov 18 2020
 /home/boris/Documents/Digital-electronics-1/Labs/05-counter/05-counter.srcs/sim_1/new/tb_clock_enable.vhd,1615378716,vhdl,,,,tb_clock_enable,,,,,,,,
 /home/boris/Documents/Digital-electronics-1/Labs/05-counter/05-counter.srcs/sim_1/new/tb_cnt_up_down.vhd,1615380234,vhdl,,,,tb_cnt_up_down,,,,,,,,
 /home/boris/Documents/Digital-electronics-1/Labs/05-counter/05-counter.srcs/sources_1/new/clock_enable.vhd,1615378385,vhdl,/home/boris/Documents/Digital-electronics-1/Labs/05-counter/05-counter.srcs/sim_1/new/tb_clock_enable.vhd,,,clock_enable,,,,,,,,
-/home/boris/Documents/Digital-electronics-1/Labs/05-counter/05-counter.srcs/sources_1/new/cnt_up_down.vhd,1615379596,vhdl,/home/boris/Documents/Digital-electronics-1/Labs/05-counter/05-counter.srcs/sim_1/new/tb_cnt_up_down.vhd,,,cnt_up_down,,,,,,,,
+/home/boris/Documents/Digital-electronics-1/Labs/05-counter/05-counter.srcs/sources_1/new/cnt_up_down.vhd,1615931077,vhdl,/home/boris/Documents/Digital-electronics-1/Labs/05-counter/05-counter.srcs/sim_1/new/tb_cnt_up_down.vhd,,,cnt_up_down,,,,,,,,
