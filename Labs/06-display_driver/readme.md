@@ -1,6 +1,8 @@
+https://github.com/bfbl/Digital-electronics-1/tree/main/Labs/06-display_driver  
+  
 # **TASK 1**: Preparation tasks  
 * ### Timing diagram figure for displaying value `3.142`
- ![timingDiag.png](images/timingDiagram.png)
+ ![timingDiag.png](images/timingDiag.png)
 
   
 # **TASK 2**: Display driver
@@ -193,6 +195,6 @@ end architecture Behavioral;
 # **TASK 3**: Eight-digit driver.
 
 * ### Image of the driver schematic. The image can be drawn on a computer or by hand
-![schematic.jpg](images/schematic.jpg)
+![schematic.jpg](images/schematics.jpg)
 
 
