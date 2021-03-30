@@ -1,6 +1,8 @@
 # **TASK 1**: Preparation tasks  
 * ### Characteristic equations and completed tables for D, JK, T flip-flops.
+  
     ![equations.png](images/equations.png)
+  
     **D flip flop:**
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
