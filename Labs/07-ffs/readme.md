@@ -1,3 +1,4 @@
+https://github.com/bfbl/Digital-electronics-1/tree/main/Labs/07-ffs
 # **TASK 1**: Preparation tasks  
 * ### Characteristic equations and completed tables for D, JK, T flip-flops.
   
