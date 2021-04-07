@@ -1,3 +1,5 @@
+https://github.com/bfbl/Digital-electronics-1/tree/main/Labs/08-traffic_lights
+
 # **TASK 1**: Preparation tasks  
 * ### Completed state table
 | **Input P** | `0` | `0` | `1` | `1` | `0` | `1` | `0` | `1` | `1` | `1` | `1` | `0` | `0` | `1` | `1` | `1` |
